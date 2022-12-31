@@ -1,8 +1,5 @@
 <?php
 $handler = fopen("input.txt", "r");
-if (file_exists("log.txt")) {
-	unlink("log.txt");
-}
 $count = 0;
 while($line = fgets($handler)) {
 	$line = trim($line);
